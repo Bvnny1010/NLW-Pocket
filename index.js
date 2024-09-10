@@ -37,3 +37,14 @@ console.log(metas[1].value)
 //const criarMeta = () => {}
 
 //function criarMeta() {}
+
+
+const start = () => {
+    let count = 0 
+    while(count => 10){
+        console.log(count)
+        count = count + 1 // ou count++
+    }
+}
+
+start()
