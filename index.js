@@ -1,58 +1,81 @@
-// hello world 
-const mensagem = "hello world"
+// // hello world 
+// const mensagem = "hello world"
 
-{
-    const mensagem = "hello world"
-    console.log(mensagem)
-}
-// arrays, objetos
-let meta = {
-    value: 'ler um livro por mês',
-    checked: true,
-    address: 2, 
-    log: (info) => {
-        console.log(info)
-    },
-}
+// {
+//     const mensagem = "hello world"
+//     console.log(mensagem)
+// }
+// // arrays, objetos
+// let meta = {
+//     value: 'ler um livro por mês',
+//     checked: true,
+//     address: 2, 
+//     log: (info) => {
+//         console.log(info)
+//     },
+// }
 
-meta.value = "não é mais ler um livro"
-meta.log(meta.value)
+// meta.value = "não é mais ler um livro"
+// meta.log(meta.value)
 
-let meta = {
-    value:'ler um livro por mês',
-    checked: true,
-}
+// let meta = {
+//     value:'ler um livro por mês',
+//     checked: true,
+// }
 
-let metas = [
-    meta,
-    {
-        value: "caminhar 20 minutos todos os dias",
-        checked: false
-    }
-]
+// let metas = [
+//     meta,
+//     {
+//         value: "caminhar 20 minutos todos os dias",
+//         checked: false
+//     }
+// ]
 
-console.log(metas[1].value)
+// console.log(metas[1].value)
 
-// function // arrow function
-//const criarMeta = () => {}
+// // function // arrow function
+// //const criarMeta = () => {}
 
-//function criarMeta() {}
+// //function criarMeta() {}
 
 
-const start1 = () => {
-    let count = 0 
-    while(count => 10){
-        console.log(count)
-        count = count + 1 // ou count++
-    }
-}
+// const start1 = () => {
+//     let count = 0 
+//     while(count => 10){
+//         console.log(count)
+//         count = count + 1 // ou count++
+//     }
+// }
 
-start1()
+// start1()
 
-const start = () => {
+////////////
+
+const{ select } = require('@inquirer/prompts')
+
+const start = async () => {
 
     while(true){
-        let opcao = "cadastrar"
+
+        const opcao = await select({
+            message: "Menu >",
+            choices: [
+                {
+                    name: "Cadastra meta",
+                    value: "cadastrar"
+                },
+                {
+                    name:"Listar metas",
+                    value: "listar"
+                },
+                {
+                    name: "Sair",
+                    value: "sair"
+                }
+        ]
+        })
+
+
         switch(opcao) {
             case "cadastrar": 
                 console.log("vamos cadastrar")

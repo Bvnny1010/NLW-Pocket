@@ -52,3 +52,12 @@
 ## Estrutura de repetição 
 
 [x] while
+
+## Módulos em Node.js
+
+[x] Importação de módulos (require, CommonJS)
+[x] Biblioteca 'inquirer' para criar prompt interativos 
+
+## Programação assíncrona e Promises
+
+[x] Uso de funções assíncronas (async/await)
