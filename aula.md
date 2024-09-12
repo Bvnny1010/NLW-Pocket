@@ -26,8 +26,9 @@
 [x] Boolean: True, False
 
 ## Operadores
-[x] Operadores de atribuição de valor
-[x] Operador de concatenação
+[x] Operadores de atribuição de valor =
+[x] Operador de concatenação +
+[x] Operadores de comparação: == != <= => < >
 
 ### Estrutura de dados
 
