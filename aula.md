@@ -8,10 +8,10 @@
 [x] Controle de fluxo (if/else)
 [x] Estrutura de repetição (for, while)
 
-## Fases da resolução de um problema
+## Fases da resolução de um problema ##########
 
 [x] Coletar os dados
-[x] Preocessar os dados (manipular, alterar )
+[x] Processar os dados (manipular, alterar )
 [x] Apresentar os dados
 
 ## Escopos e variáveis 
@@ -38,7 +38,7 @@
 ## Arrays
 
 [x] Uma lista que contém qualquer tipo de dado 
-[x] Métodos de array: push, [find, forEach, filter] HOF (Higher order function)
+[x] Métodos de array: push, [find, forEach, filter, map] HOF (Higher order function)
 
 ## Objetos
 
